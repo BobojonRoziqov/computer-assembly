@@ -1,0 +1,516 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+
+// global variables
+$ff-primary: "Roboto",
+sans-serif;
+$gradient-primary: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+$background-secondary:linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+$color-black: black;
+$color-black-light: rgba(18, 18, 18, 1);
+$radius: 50px;
+
+// global variables
+
+// Global Styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $ff-primary;
+    color: white;
+}
+
+section {
+    background-color: $color-black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font: {
+        weight: 700;
+        size: 3.7rem;
+    }
+
+    line-height: 5rem;
+}
+
+h4 {
+    font: {
+        weight: 700;
+        size: 3rem;
+    }
+text-align: center;
+    line-height: 3.5rem;
+}
+
+
+// Global Styles
+
+
+/*  global classes */
+.section-center {
+    margin: 0 auto;
+    max-width: 70vw;
+    padding: 5rem 0;
+}
+
+
+.xsmall-prg {
+    font: {
+        weight: 400;
+        size: 14px;
+    }
+    line-height: 22px;
+    opacity: 40%;
+    padding: 0 1rem;
+}
+
+
+
+.medium-prg {
+    font: {
+        weight: 700;
+        size: 36px;
+    }
+
+    line-height: 50px;
+}
+
+.mm-prg {
+    font: {
+        weight: 500;
+        size: 24px;
+    }
+    line-height: 30px;
+}
+
+.small-prg {
+    font: {
+        weight: 400;
+        size: 16px;
+    }
+    line-height: 24px;
+    opacity: 40%;
+}
+
+.img-container {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*  global classes */
+
+
+// header style
+header {
+    background-image: url(./images/main-screen__bgc.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    margin: auto;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90vw;
+        margin: auto;
+        padding: 1rem 0;
+
+        button {
+            all: unset;
+            background: $gradient-primary;
+            padding: 14px 2rem;
+            border-radius: $radius;
+            color: white;
+        }
+    }
+}
+
+.bars {
+    font-size: 2rem;
+    display: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    li {
+        a {
+            color: white;
+        }
+    }
+}
+
+.container-time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+    gap: 14px;
+    max-width: 500px;
+
+    div {
+        padding: 1rem;
+        background-color: $color-black-light;
+        text-align: center;
+
+        p {
+            margin: 0;
+        }
+    }
+}
+// header style
+
+// statistics style
+.statistics {
+    background-color: rgba(18, 18, 18);
+    padding: 1rem 0;
+}
+
+.statistics-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 70vw;
+    gap: 1rem;
+
+    button {
+        background: $background-secondary;
+        padding: 10px 25px;
+        border-radius: $radius;
+    }
+
+    div {
+        display: flex;
+        justify-content: space-between;
+
+    }
+}
+
+.stat-item-2 {
+    flex-wrap: wrap;
+
+}
+
+.stat-item-2-content {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+
+    div {
+        align-items: center;
+        width: 250px;
+    }
+}
+
+.padding-left {
+    padding-left: 2rem;
+}
+
+.stat-line-gradient {
+    height: 5px;
+    background: $background-secondary;
+}
+
+.stat-line-white {
+    height: 5px;
+    background-color: white;
+
+}
+
+// statistics style
+
+// doing section
+.work-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        p {
+            margin-top: 3rem;
+        }
+ }
+    .work-img-container {
+        position: relative;
+        margin-right: 2rem;
+    }
+
+    .work-img {
+        position: absolute;
+        top:60px;
+        left: 40px;        
+    }
+// doing section
+
+// fast start section
+.fast-start-title {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+      
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0;
+    width: 70vw;
+    div {
+        margin: 1rem 0;
+    }
+}
+
+.result-frame {
+    height: 100px;
+    display: grid;
+    place-items: center;
+    margin: 2rem 0;
+    img {
+        width: 100%;
+    }
+}
+// fast start section
+
+// profession section
+
+.profession-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    margin: 5rem  auto;
+    article {
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap:2rem;
+    padding: 1rem;
+    div {
+        max-width: 90px;
+        max-height:90px;
+    }
+    }
+}
+
+// profession section
+// Partners section
+.container-logo {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin: 5rem 0;
+    grid-template-columns: auto auto auto auto;   
+}
+// Partners section
+
+// learning 
+.learning-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+// learning 
+
+// teachers section
+.teachers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+    article {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        button {
+            all: unset;
+            padding: 10px 25px;
+            border: 1px solid white;
+            border-radius: $radius;
+            font-size: 14px;
+            opacity: 90%;
+        }        
+    }
+}
+
+footer {
+    padding: 4rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    background-color: $color-black;
+    div {
+        position: relative;
+        width:  500px;
+        input {
+            width: 100%;
+            height: 40px;
+            border-radius: $radius;
+            border: none;
+            background-color: rgba(96, 89, 89, 0.777);
+            padding-left: 25px;
+        }
+        button {
+            position: absolute;
+            height: 40px;
+            right: 0;
+            border: none;
+            background: $background-secondary;
+            padding: 10px 25px;
+            border-radius: $radius;
+        }
+    }   
+    article {
+        display: flex;
+        gap: 1rem;
+        div {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background: $gradient-primary;
+            font-size: 1.2rem;
+              display: grid;
+           place-items: center;
+        }
+    }
+}
+
+// teachers section
+
+
+
+@media only screen and (max-width: 992px) {
+    .menu {
+        display: none;
+    }
+
+    h1 {
+        font: {
+            weight: 500;
+            size: 2.5rem;
+        }
+        line-height: 2.5rem;
+    }
+
+    h4 {
+        font: {
+            weight: 500;
+            size: 1.5rem;
+        }
+        line-height: 1.5rem;
+    }
+
+    .medium-prg {
+        font: {
+            weight: 500;
+            size: 26px;
+        }
+        line-height: 30px;
+    }
+
+    .small-prg {
+        font: {
+            weight: 300;
+            size: 12px;
+        }
+        line-height: 20px;
+    }
+
+
+    .bars {
+        display: block;
+    }
+
+    .work-section {
+        flex-wrap: wrap;
+    }
+
+    .work-img-container {
+        margin-bottom: 2rem;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }   
+    }
+
+    .work-img {
+        position: absolute;
+        top:20px;
+        left: 10px;        
+    }
+
+    .padding-left {
+        padding: 0;
+    }
+
+    .result {
+        flex-direction: column;
+    }
+
+    .profession-container {
+        flex-wrap: wrap;
+    }
+
+    .container-logo {
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+
+    .teachers {
+        flex-direction: column;
+        justify-content: center;
+        article {
+            border: 1px solid rgba(161, 156, 156, 0.338);
+            padding: 1rem;
+            border-radius: $radius;
+        }
+
+    }
+   
+footer { 
+    div {
+        width:  350px;
+        input {
+            height: 30px;
+            padding-left: 15px;
+        }
+        button {
+            height: 30px;
+            padding: 5px 15px;            
+        }
+    }
+    }
+
+}
